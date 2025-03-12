@@ -1,0 +1,122 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #d62a91;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .categories-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .category {
+            flex: 1 1 calc(33.33% - 20px);
+            max-width: 220px;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+        .category:hover {
+            transform: scale(1.05);
+        }
+        .category img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .category-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1 id="myHeader">FURVANA</h1>  
+    <nav>
+        <ul>
+            <li><a href="new.html" >Home</a></li>
+            <li><a href="Categories.html">Categories</a></li>
+            <li><a href="pharmacy.html">Pharmacy</a></li>
+            <li><a href="about.html" class="active">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>About FURVANA</h2>
+    <p>Welcome to <span class="highlight">FURVANA</span> – your ultimate all-in-one pet care destination!</p>
+    
+    <p>We believe that pets are more than just animals – they’re family! 🐶🐱🐾 That's why we've created a one-stop solution for all pet needs, from daily essentials to health care.</p>
+
+    <h3>What We Offer:</h3>
+    <p><span class="highlight">🩺 Pharmacy:</span> Vet-approved medicines and supplements.</p>
+    <p><span class="highlight">👕 Clothes & Accessories:</span> Stylish outfits, collars, beds & more.</p>
+    <p><span class="highlight">🍖 Pet Food:</span> High-quality pet food and treats for all breeds.</p>
+    <p><span class="highlight">👟 Footwear:</span> Protect those paws with comfortable pet shoes.</p>
+    <p><span class="highlight">🛁 Grooming:</span> Shampoos, brushes, and all grooming essentials.</p>
+    <p><span class="highlight">🧸 Toys:</span> Fun, safe toys for endless entertainment.</p>
+
+    <h3>Why Choose Us?</h3>
+    <p>✔ Trusted by Pet Owners
+       ✔ Affordable Prices
+       ✔ Fast & Reliable Delivery 
+       ✔ Quality Assured Product  
+       ✔ Customer Support for Your Pet's Needs</p>
+
+    <p>Join our FURVANA family today and give your furry friend the best care possible! ❤️</p>
+</div>
+
+<div class="footer">
+    <p>© 2025 FURVANA - All Rights Reserved.</p>
+</div>
+
+</body>
+</html>

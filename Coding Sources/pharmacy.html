@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FURVANA Pharmacy</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        
+        }
+
+        /* Header & Navigation */
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            background-color: #d62a91;
+        }
+
+    .container {
+    width: 90%;
+    height: 40%; 
+    max-width: 1200px;
+    margin: 20px auto; 
+    text-align: center;
+    }
+    
+        /* Featured Products Grid */
+        .product-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .product {
+            flex: 1 1 calc(25% - 20px); /* 4 items per row */
+            max-width: 220px;
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        .product-title {
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .button {
+            background: #d62a91;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            width: 100%;
+            border-radius: 5px;
+        }
+        .button:hover {
+            background: #b01e72;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product {
+                flex: 1 1 calc(50% - 20px); /* 2 items per row */
+            }
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        @media (max-width: 480px) {
+            .product {
+                flex: 1 1 calc(100% - 20px); /* 1 item per row */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>FURVANA</h1>
+    <nav>
+        <ul>
+            <li><a href="new.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="pharmacy.html" class="active">Pharmacy</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- Featured Products Section -->
+<div class="container">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+        <div class="product">
+            <a target="_blank" href="cepha.jpeg">
+                <img src="cepha.jpeg" alt="Cephalexin">
+            </a>
+            <div class="product-title">Cephalexin Tablet</div>
+            <button class="button">Add to Cart</button>
+        </div>
+      
+        <div class="product">
+            <a target="_blank" href="enroflox.jpg">
+                <img src="enroflox.jpg" alt="Enrofloxacin">
+            </a>
+            <div class="product-title">Enrofloxacin Tablet</div>
+            <button class="button">Add to Cart</button>
+        </div>
+      
+        <div class="product">
+            <a target="_blank" href="pet-tabs.jpg">
+                <img src="pet tabs.jpg" alt="Pet Tablet">
+            </a>
+            <div class="product-title">Pet Tablet</div>
+            <button class="button">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <a target="_blank" href="meloxi.webp">
+                <img src="meloxi.webp" alt="Meloxicam">
+            </a>
+            <div class="product-title">Meloxicam</div>
+            <button class="button">Add to Cart</button>
+        </div>
+    </div>
+</div>
+
+<!-- Footer Section -->
+<div class="footer">
+    <p>© 2025 FURVANA - All Rights Reserved.</p>
+</div>
+
+</body>
+</html>
